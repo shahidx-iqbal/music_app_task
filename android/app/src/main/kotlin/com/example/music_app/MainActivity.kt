@@ -18,7 +18,7 @@ class MainActivity : FlutterActivity() {
                     // Extract the arguments from Flutter
                     val title = call.argument<String>("title") ?: "Unknown Title"
                     val artist = call.argument<String>("artist") ?: "Unknown Artist"
-                    val isPlaying = call.argument<Boolean>("isPlaying") ?: false
+            val isPlaying = call.argument<Boolean>("isPlaying") ?: false
 
                     // Pass the data to the service via an Intent
                     val serviceIntent = Intent(this, PlaybackService::class.java).apply {
@@ -30,9 +30,18 @@ class MainActivity : FlutterActivity() {
                     result.success("Service started with title: $title, artist: $artist, isPlaying: $isPlaying")
                 }
                 "stopService" -> {
-                    val stopIntent = Intent(this, PlaybackService::class.java)
+                   // Extract the arguments from Flutter
+                    val title = call.argument<String>("title") ?: "Unknown Title"
+                    val artist = call.argument<String>("artist") ?: "Unknown Artist"
+            val isPlaying = call.argument<Boolean>("isPlaying") ?: false
+
+                    val stopIntent = Intent(this, PlaybackService::class.java).apply {
+                        putExtra("title", title)
+                        putExtra("artist", artist)
+                        putExtra("isPlaying", isPlaying)
+                    }
                     stopService(stopIntent)
-                    result.success("Service stopped")
+                    result.success("Service stop with title: $title, artist: $artist, isPlaying: $isPlaying")
                 }
                 else -> {
                     result.notImplemented()

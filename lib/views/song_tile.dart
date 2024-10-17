@@ -43,7 +43,6 @@ class _SongTileState extends ConsumerState<SongTile>
         curve: Curves.easeInOut,
       ),
     );
-
   }
 
   Future<void> _togglePlay() async {
@@ -89,46 +88,87 @@ class _SongTileState extends ConsumerState<SongTile>
           color: CustomColorScheme.cardColor,
           elevation: 5,
           shadowColor: CustomColorScheme.primary,
-          margin: const EdgeInsets.all(10),
+          margin: const EdgeInsets.all(15),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              //Static image url is used for all cards
               Expanded(
                 child: Image.network(
                   'https://static.vecteezy.com/system/resources/previews/046/437/292/non_2x/itunes-music-icon-free-png.png',
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text(
-                    widget.song.name,
-                    style: Styles.customTextStylePopins(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: CustomColorScheme.primary,
-                    ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            'Song: ',
+                            style: Styles.customTextStylePopins(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: CustomColorScheme.primary,
+                            ),
+                          ),
+                          Text(
+                            widget.song.name,
+                            style: Styles.customTextStylePopins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                              color: CustomColorScheme.primary,
+                            ),
+                            // softWrap: true,
+                            // overflow: TextOverflow.ellipsis,
+                            // maxLines: 1,
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            'Artist: ',
+                            style: Styles.customTextStylePopins(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: CustomColorScheme.primary,
+                            ),
+                          ),
+                          Text(
+                            widget.song.artist,
+                            style: Styles.customTextStylePopins(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                              color: CustomColorScheme.primary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                  Text(
-                    widget.song.artist,
-                    style: Styles.customTextStylePopins(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      color: CustomColorScheme.primary,
-                    ),
-                  ),
-                ],
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   IconButton(
-                    icon: Icon(isPlaying ? Icons.pause : Icons.play_arrow),
+                    icon: Icon(
+                      isPlaying ? Icons.pause : Icons.play_arrow,
+                      color: CustomColorScheme.white,
+                    ),
                     onPressed: _togglePlay,
                   ),
                   IconButton(
-                    icon: const Icon(Icons.delete),
+                    icon: const Icon(
+                      Icons.delete,
+                      color: CustomColorScheme.white,
+                    ),
                     onPressed: () {
                       if (widget.song.id != null) {
                         widget.onDelete(widget.song.id!.toInt());

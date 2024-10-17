@@ -76,7 +76,7 @@
                     }
                 },
                 {
-                    "source": "/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

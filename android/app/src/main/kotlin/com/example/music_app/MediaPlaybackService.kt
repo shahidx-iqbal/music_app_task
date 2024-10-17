@@ -23,7 +23,7 @@ class PlaybackService : Service() {
 override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
     val title = intent?.getStringExtra("title") ?: "Unknown Title"
     val artist = intent?.getStringExtra("artist") ?: "Unknown Artist"
-    val isPlaying = intent?.getStringExtra("isPlaying") ?: "Unknown"
+val isPlaying = intent?.getBooleanExtra("isPlaying", false) ?: false
 
     // Build notification for foreground service
     val notificationIntent = Intent(this, MainActivity::class.java)
@@ -41,7 +41,7 @@ override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         .setContentText("Artist: $artist")
 
     // Adjust notification based on the isPlaying state
-    if (isPlaying.toBoolean()) {
+    if (isPlaying) {
         notificationBuilder.addAction(
             R.drawable.ic_pause, // Replace with your pause icon
             "Pause",

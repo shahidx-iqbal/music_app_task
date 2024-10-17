@@ -13,53 +13,53 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:2:4-65
-15-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:2:21-63
+15-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:2:4-65
+15-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:2:21-63
 16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-16-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:3:1-75
-16-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:3:18-73
+16-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:3:1-75
+16-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:3:18-73
 17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-17-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:4:1-76
-17-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:4:18-74
+17-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:4:1-76
+17-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:4:18-74
 18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-18-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:5:1-72
-18-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:5:18-70
+18-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:5:1-72
+18-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:5:18-70
 19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
-19-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:6:4-90
-19-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:6:21-88
+19-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:6:4-90
+19-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:6:21-88
 20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-20-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:7:5-80
-20-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:7:22-78
-21    <!--
-22 Required to query activities that can process text, see:
-23         https://developer.android.com/training/package-visibility and
-24         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
-25
-26         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
-27    -->
-28    <queries>
-28-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:53:5-58:15
-29        <intent>
-29-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:54:9-57:18
-30            <action android:name="android.intent.action.PROCESS_TEXT" />
-30-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:55:13-72
-30-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:55:21-70
-31
-32            <data android:mimeType="text/plain" />
-32-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:56:13-50
-32-->/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/AndroidManifest.xml:56:19-48
-33        </intent>
-34    </queries>
-35
-36    <uses-permission android:name="android.permission.WAKE_LOCK" />
-36-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-36-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-65
-37    <uses-permission android:name="android.permission.VIBRATE" />
-37-->[:flutter_local_notifications] /Users/shahid/Documents/My_Projects/music_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-66
-37-->[:flutter_local_notifications] /Users/shahid/Documents/My_Projects/music_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-63
+20-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:7:5-80
+20-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:7:22-78
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:8:9-69
+21-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:8:26-67
+22    <!--
+23 Required to query activities that can process text, see:
+24         https://developer.android.com/training/package-visibility and
+25         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+26
+27         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+28    -->
+29    <queries>
+29-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:55:5-60:15
+30        <intent>
+30-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:56:9-59:18
+31            <action android:name="android.intent.action.PROCESS_TEXT" />
+31-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:57:13-72
+31-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:57:21-70
+32
+33            <data android:mimeType="text/plain" />
+33-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:58:13-50
+33-->/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/AndroidManifest.xml:58:19-48
+34        </intent>
+35    </queries>
+36
+37    <uses-permission android:name="android.permission.WAKE_LOCK" />
+37-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+37-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-65
 38    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-38-->[:flutter_local_notifications] /Users/shahid/Documents/My_Projects/music_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-77
-38-->[:flutter_local_notifications] /Users/shahid/Documents/My_Projects/music_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-74
+38-->[:flutter_local_notifications] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-77
+38-->[:flutter_local_notifications] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-74
 39
 40    <permission
 40-->[androidx.core:core:1.13.1] /Users/shahid/.gradle/caches/transforms-3/e0f4ce6c3b9fd1e9ecfd67b5f54eb24f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
@@ -118,43 +118,43 @@
 88            android:name="com.example.music_app.PlaybackService"
 89            android:foregroundServiceType="mediaPlayback" />
 90        <service
-90-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:44
+90-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:44
 91            android:name="id.flutter.flutter_background_service.BackgroundService"
-91-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-83
+91-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-83
 92            android:enabled="true"
-92-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-35
+92-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-35
 93            android:exported="true"
-93-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-36
+93-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-36
 94            android:stopWithTask="false" />
-94-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-41
+94-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-41
 95
 96        <receiver
-96-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-21:39
+96-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-21:39
 97            android:name="id.flutter.flutter_background_service.WatchdogReceiver"
-97-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-82
+97-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-82
 98            android:enabled="true"
-98-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-35
+98-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-35
 99            android:exported="true" />
-99-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
+99-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
 100        <receiver
-100-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+100-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
 101            android:name="id.flutter.flutter_background_service.BootReceiver"
-101-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-78
+101-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-78
 102            android:enabled="true"
-102-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-35
+102-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-35
 103            android:exported="true" >
-103-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-36
+103-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-36
 104            <intent-filter>
-104-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-30:29
+104-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-30:29
 105                <action android:name="android.intent.action.BOOT_COMPLETED" />
-105-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-79
-105-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-76
+105-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-79
+105-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-76
 106                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-106-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
-106-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+106-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+106-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
 107                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-107-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-84
-107-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-81
+107-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-84
+107-->[:flutter_background_service_android] /Users/shahid/Documents/My_Projects/music_app_task/build/flutter_background_service_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-81
 108            </intent-filter>
 109        </receiver>
 110

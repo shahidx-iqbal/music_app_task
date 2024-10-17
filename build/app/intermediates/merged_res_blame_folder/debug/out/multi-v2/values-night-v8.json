@@ -4,7 +4,7 @@
             "outputFile": "com.example.music_app-mergeDebugResources-25:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/shahid/Documents/My_Projects/music_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/shahid/Documents/My_Projects/music_app_task/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
