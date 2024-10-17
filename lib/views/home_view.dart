@@ -7,6 +7,7 @@ import 'package:music_app/views/song_tile.dart';
 import 'package:music_app/views/update_song_view.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:music_app/widgets/custom_appbar.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -18,16 +19,34 @@ class HomeScreen extends ConsumerStatefulWidget {
 class _HomeScreenState extends ConsumerState<HomeScreen> {
   final player = AudioPlayer();
 
+
+
+Future<void> _requestNotificationPermission() async {
+    // Request notification permission
+    PermissionStatus status = await Permission.notification.request();
+
+    if (status.isGranted) {
+      print('Notification permission granted.');
+    } else if (status.isDenied) {
+      print('Notification permission denied.');
+    } else if (status.isPermanentlyDenied) {
+      print('Notification permission permanently denied.');
+      // You can guide the user to the settings page if permission is permanently denied
+      openAppSettings();
+    }
+  }
+
   @override
   void initState() {
     super.initState();
+     _requestNotificationPermission();
+
   }
 
   @override
   Widget build(BuildContext context) {
     // Set screen dimensions
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
+   
 
 
     // Watch the list of songs

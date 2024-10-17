@@ -79,6 +79,8 @@ class _SongTileState extends ConsumerState<SongTile>
 
   @override
   Widget build(BuildContext context) {
+     final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
     return GestureDetector(
       onTap: () =>
           _navigateToEditScreen(context, isEdit: true, song: widget.song),
@@ -100,7 +102,7 @@ class _SongTileState extends ConsumerState<SongTile>
                 ),
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width,
+                width: screenWidth,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Column(

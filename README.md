@@ -23,7 +23,7 @@ Flutter Installation Guide
 
 Installation
 Clone the repository:
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/shahidx-iqbal/music_app_task.git
 
 
 Navigate into the project directory:
